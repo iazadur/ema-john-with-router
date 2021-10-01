@@ -7,7 +7,7 @@ import { deleteFromDb } from '../../utilities/fakedb'
 
 const OrderReview = () => {
     const [products] = useProducts()
-    const [cart,setCart] = useCart(products)
+    const [cart, setCart] = useCart(products)
     const handleRemove = key => {
         const newCart = cart.filter(product => product.key !== key)
         setCart(newCart)
