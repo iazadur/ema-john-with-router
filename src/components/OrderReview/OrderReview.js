@@ -25,6 +25,9 @@ const OrderReview = () => {
                 }
             </div>
             <div className="cart-container">
+                <div>
+                    <h2>bacca kacca children</h2>
+                </div>
                 <Cart cart={cart}></Cart>
             </div>
         </div>
