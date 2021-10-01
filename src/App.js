@@ -5,6 +5,7 @@ import Header from './components/Header/Header';
 import Inventory from './components/Inventory/Inventory';
 import OrderReview from './components/OrderReview/OrderReview';
 import Shop from './components/Shop/Shop';
+import OrderComplete from './components/OrderComplete/OrderComplete';
 
 function App() {
   return (
@@ -23,6 +24,9 @@ function App() {
           </Route>
           <Route path="/inventory">
             <Inventory></Inventory>
+          </Route>
+          <Route path="/order">
+            <OrderComplete></OrderComplete>
           </Route>
           <Route path="*">
             <NotFound></NotFound>
