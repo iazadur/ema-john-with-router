@@ -9,6 +9,7 @@ import OrderComplete from './components/OrderComplete/OrderComplete';
 import Login from './components/Login/Login';
 import Register from './components/Register/Register';
 import AuthProvider from './Context/AuthProvider';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 
 function App() {
   return (
@@ -29,9 +30,9 @@ function App() {
             <Route path="/inventory">
               <Inventory></Inventory>
             </Route>
-            <Route path="/order">
+            <PrivateRoute path="/order">
               <OrderComplete></OrderComplete>
-            </Route>
+            </PrivateRoute>
             <Route exact path="/login">
               <Login></Login>
             </Route>
