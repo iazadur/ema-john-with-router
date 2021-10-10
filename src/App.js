@@ -6,6 +6,8 @@ import Inventory from './components/Inventory/Inventory';
 import OrderReview from './components/OrderReview/OrderReview';
 import Shop from './components/Shop/Shop';
 import OrderComplete from './components/OrderComplete/OrderComplete';
+import Login from './components/Login/Login';
+import Register from './components/Register/Register';
 
 function App() {
   return (
@@ -27,6 +29,12 @@ function App() {
           </Route>
           <Route path="/order">
             <OrderComplete></OrderComplete>
+          </Route>
+          <Route exact path="/login">
+            <Login></Login>
+          </Route>
+          <Route exact path="/register">
+            <Register></Register>
           </Route>
           <Route path="*">
             <NotFound></NotFound>
